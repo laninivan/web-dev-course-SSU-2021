@@ -1,26 +1,11 @@
-/* By Athlon Front-End Team */
 
-/* Core variables */
-@import 'base/vars';
+body {
+    margin: 0;
+    
+}
 
-/* CSS Reset */
-@import 'base/reset';
+canvas{
+    background-color: rgb(14, 2, 24);
+    //background-color: rgb(224, 216, 231);
 
-/* CSS print */
-@import 'base/print';
-
-/* Fonts */
-@import 'base/fonts';
-
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
-/* Components */
-
-/* Browser specific styles */
-@import 'dirty/hacks';
-
-/* Demo Page styles */
-@import 'demo';
+}
