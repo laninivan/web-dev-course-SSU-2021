@@ -24,7 +24,7 @@ drawAll(){
          }
 
       createStandartShell(cursorX,cursorY,centerCanvasCordX,centerCanvasCordY){
-         this.create('Simple_Projectile',cursorX,cursorY,centerCanvasCordX,centerCanvasCordY,1,10)
+         this.create('Simple_Projectile',cursorX,cursorY,centerCanvasCordX,centerCanvasCordY,1,5)
       }
 
     offsetAllPositions(offsetX,offsetY,maxCordX,maxCordY){

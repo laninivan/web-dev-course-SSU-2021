@@ -9,7 +9,17 @@ import Trajectory from "./trajectory";
       this.trajectory.definitionDirection(X,Y);
    }
    
-
+   attack(entity){
+      if(this.isCanAttack)
+      {
+        
+          this.isCanAttack=false;
+          super.attack(entity);
+          setTimeout(() => {
+              this.isCanAttack=true;
+          }, 5000/this.speedAttack);
+      }
+   }
    isCollision(X,Y){
       return super.isCollision(X,Y);
       

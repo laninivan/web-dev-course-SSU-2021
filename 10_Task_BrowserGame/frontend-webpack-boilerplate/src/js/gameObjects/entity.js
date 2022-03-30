@@ -19,16 +19,6 @@ import Acting from "./acting";
         super.moveWithVelosity(offsetX,offsetY,maxCordX,maxCordY);
     }
     attack(entity){
-        if(this.isCanAttack)
-        {
-            this.isCanAttack=false;
-            super.attack(entity);
-            setTimeout(() => {
-                console.log(this.speedAttack)
-                this.isCanAttack=true;
-            }, 5000/this.speedAttack);
-        }
-       
-       
+            super.attack(entity);       
     }
  }

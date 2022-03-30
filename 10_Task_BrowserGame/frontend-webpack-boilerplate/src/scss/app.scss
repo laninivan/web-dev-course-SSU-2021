@@ -1,11 +1,97 @@
+@import 'skills.scss';
 
 body {
     margin: 0;
+    overflow: hidden;
+    background: rgb(40, 48, 45);
+}
+
+
+
+canvas{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: rgb(1, 36, 26);
+    border-width: 10px;
+    border-color: rgb(34, 206, 157);
+    display:none;
+}
+
+.game-interface{
+    display: flex;
+  justify-content: space-between;
+  background: rgb(40, 48, 45);
+}
+
+.game-component{
+    width: 93.3%;
+    background: rgb(40, 48, 45);
+    color: azure;
     
 }
 
-canvas{
-    background-color: rgb(14, 2, 24);
-    //background-color: rgb(224, 216, 231);
+#component-interface{
+    display: none;
+}
 
+.menu{
+    position:absolute;
+    z-index: 10;
+    border-width: 3px;
+    border-color:azure;
+    width: 70%;
+    height: 100%;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background: rgba(24, 36, 31, 0.363);
+    button{
+        display: block;
+        outline: none;
+        color: bisque;
+        position:relative;
+        margin-top: 1%;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        height: 20%;
+        border-radius: 20%;
+        border-width:3px;
+        border-color: rgba(240, 255, 255, 0.5);
+        font-size: 30px;
+        background: rgba(11, 192, 126, 0.089)
+    }
+    
+}
+
+.menu{
+    button:hover{
+        color: rgba(114, 216, 94, 0.671);
+    }
+}
+
+#endGameMenu{
+    display: none;
+}
+
+#rating{
+    display: none;
+    font-size: 30px;
+    color: beige;
+    text-align: center;
+    #ratingList{
+        text-align: center;
+        transform: translate(25%, 0);
+        li {
+            list-style-type:decimal;
+           }
+    }
+}
+
+#backFromRating{
+    top: 10%;
+    width: 40%;
+    height:  20%;
 }

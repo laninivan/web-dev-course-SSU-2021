@@ -26,6 +26,7 @@ import Picture from "../visualization/picture";
      draw(context){
          if(this.isVisible)
          {
+
             this.picture.draw(context,this.X,this.Y);
         }
      }

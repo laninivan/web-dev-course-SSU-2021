@@ -31,12 +31,12 @@ drawAll(){
 
     createEnemie_1(posX,posY,posPlayerX,posPlayerY){
         this.create('Enemy_1_img',new Collider(new RoundArea(0,0,15)),
-        posX, posY,1,1,'melee',1,1, 2, 2, 0,posPlayerX, posPlayerY)
+        posX, posY,1,1,'melee',0.5,1, 2, 2, 0,posPlayerX, posPlayerY)
     }
     
     createEnemie_2(posX,posY,posPlayerX,posPlayerY){
         this.create('Enemy_2_img',new Collider(new RoundArea(0,0,10)),
-        posX, posY,2,2,'melee',2,1, 5, 5, 0,posPlayerX, posPlayerY)
+        posX, posY,2,2,'melee',1,1, 5, 5, 0,posPlayerX, posPlayerY)
     }
 
 

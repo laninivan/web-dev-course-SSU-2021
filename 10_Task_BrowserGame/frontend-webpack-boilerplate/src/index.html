@@ -1,15 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Survival Game</title>
-    <meta name="description" content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
-    <meta name="keywords" content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Lanin Ivan Alexandrovich">
-  </head>
-  <body>
-    <canvas></canvas>
-   
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survival Game</title>
+  <meta name="description"
+    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
+  <meta name="keywords"
+    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Lanin Ivan Alexandrovich">
+</head>
+
+<body>
+
+  
+
+  <div class="game-interface">
+
+    
+    <div class="game-component">
+
+      <div class="menu" id="mainMenu"> 
+        <button id="startButton">Начать игру</button>
+        <button id="ratingButton">Рейтинг</button>
+        <button id="exitButton">Выход</button>
+      </div>
+      
+      <div class="menu" id="endGameMenu"> 
+        <button id="restartButton">Начать заново</button>
+        <button id="exitToMenuButton">Выход</button>
+      </div>
+
+      <div class="menu" id="rating"> 
+        <h1>Рейтинг</h1>
+       
+        <!-- <p ></p> -->
+        <ul id="ratingList">
+
+        </ul>
+        <button id="backFromRating">Назад</button>
+        
+      </div>
+     
+      <canvas>
+        
+      </canvas>
+      
+    </div>
+
+    <div class="game-component" id="component-interface">
+
+
+      <div class="skills">
+        <img src="images/content/skillHp.png" class="image-button" >
+        <button class="skill-button" id="bSkillHpPlus">+</button>
+        <button class="info-button" id="bPlusInfo" data-title="Повышение здоровья на 12.5%">?</button>
+        
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span id="priceHp">x10</span>
+        </div>
+
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillVelocity.png" class="image-button">
+        <button class="skill-button" id="bSkillVelocityPlus">+</button>
+        <button class="info-button" id="bVelocityPlusInfo" data-title="Повышение скорости перемещения на 12.5%">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span id="priceVelocity">x10</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillDamage.png" class="image-button">
+        <button class="skill-button" id="bSkillDamagePlus" >+</button>
+        <button class="info-button"  id="bDamagePlusInfo" data-title="Повышение урона нанасимого противникам на 12.5%">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span id="priceDamage">x10</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillCountShell.png" class="image-button">
+        <button class="skill-button" id="bSkillCountShellsPlus">+</button>
+        <button class="info-button" id="bCountShellsPlusInfo" data-title="Увеличение количества снарядов до 2">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span id="priceCountShells">x10</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillSpeedRecharge.png" class="image-button">
+        <button class="skill-button" id="bSkillSpeedAttackPlus" >+</button>
+        <button class="info-button" id="bSpeedAttackPlusInfo" data-title="Уменьшение времени перезарядки на 12.5%">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span  id="priceSpeedRecharge">x10</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillAura.png" class="image-button">
+        <button class="skill-button" id="bSkillAuraPlus" >+</button>
+        <button class="info-button" id="bAuraPlusInfo" data-title="Повышает радиус отталкивающей ауры до 50 и силу отталкивания до 1">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span  id="priceAura">x10</span>
+        </div>
+      </div>
+
+      <div class="skills">
+        <img src="images/content/skillArmor.png" class="image-button">
+        <button class="skill-button" id="bSkillArmorsPlus" >+</button>
+        <button class="info-button" id="bArmorsPlusInfo" data-title="Повышает защиту до 1">?</button>
+
+        <div class="skill-price-tag">
+          <img src="images/content/money.png">
+         <span  id="priceArmor">x10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
