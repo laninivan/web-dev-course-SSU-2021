@@ -1,0 +1,73 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "serif", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+.head {
+    text-align: center;
+}
+
+.name {
+    color: black;
+    font-weight: bolder;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.info {
+    text-align: right;
+}
+
+.header-hr {
+    background-color: saddlebrown;
+    height: 5px;
+}
+
+h2 {
+    color: olive;
+    font-weight: normal;
+}
+
+table {
+    padding: 0 30px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table td {
+    width: 100%;
+}
+
+section td:first-of-type {
+    width: 20%;
+}
+
+ul {
+    padding: 0;
+}
+
+.ul-list {
+    list-style: none;
+}
+
+a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: purple;
+}

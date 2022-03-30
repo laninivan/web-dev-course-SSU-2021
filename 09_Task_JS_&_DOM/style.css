@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    margin: 14px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Courier, monospace;
+    background-color: bisque;
+}
+
+.block {
+    border-bottom-style: solid;
+    padding-bottom:12px;
+
+}
+
+#getTable {
+    font-family: 'Consolas', Courier, monospace;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>09_Task_JS_&_DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/1.js"></script>
+    <script src="scripts/2.js"></script>
+    <script src="scripts/3.js"></script>
+</head>
+
+<body>
+<div class = "block">
+    <h2>Get Vowel Count</h2>
+    <form>
+        <p><input type="text" placeholder="Enter message" id="getMessage"/></p>
+        <p><input type="button" value="Vowel count" onclick="printTable()"></input></p>
+        <p><input type="button" value="Reset" onclick="resetTable()"></input></p>
+        <p>Table:</p>
+        <div id="getVowelCount"></div>
+    </form>
+</div>
+
+
+
+<div class = "block">
+    <h2>Is Word Isogram</h2>
+    <form>
+        <p><input type="text" placeholder="Enter message" id="writeMessage"/></p>
+        <p><input type="button" value="Isogram or not" onclick="isWordIsogram()"></input></p>
+        <p><input type="button" value="Reset" onclick="resetMessage()"></input></p>
+        <p>Table:</p>
+        <div id="isWordIsogram"></div>
+    </form>
+</div>
+
+<div class = "block">
+    <h2>Generating Password</h2>
+    <form>
+        <input type="button" value="Generate password" onclick="genPass()"></input>
+        <input type="button" value="Reset" onclick="resetPass()"></input>
+        <p>PASSWORD:</p>
+        <div id="generatePassword"></div>
+    </form>
+</div>
+
+
+</body>
+
+</html>
