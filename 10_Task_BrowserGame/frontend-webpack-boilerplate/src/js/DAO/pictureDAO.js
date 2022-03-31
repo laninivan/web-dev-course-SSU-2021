@@ -12,8 +12,9 @@ constructor(){
     
     this.pictures.set('Simple_Projectile',new ImageObject("images/content/shell_1.png",-4,-4,8,8));
     this.pictures.set("PlayerImg",new ImageObject("images/content/player.png",-30,-30,60,60));
-    this.pictures.set("Enemy_1_img",new ImageObject("images/content/enemy_1.png",-20,-20,40,40));
+    this.pictures.set("Enemy_1_img",new ImageObject("images/content/enemy_1.png",-30,-30,60,60));
     this.pictures.set("Enemy_2_img",new ImageObject("images/content/enemy_2.png",-15,-15,30,30));
+    this.pictures.set("Enemy_3_img",new ImageObject("images/content/enemy_3.png",-30,-30,60,60));
 
     this.pictures.set("plHP1",new ImageObject("images/content/hp1.png",-75,-75,150,150));
     this.pictures.set("plHP2",new ImageObject("images/content/hp2.png",-75,-75,150,150));

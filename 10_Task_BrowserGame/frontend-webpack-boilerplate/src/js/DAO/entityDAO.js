@@ -56,25 +56,25 @@ import ProjectliesDAO from "./shellsDAO";
                this.decorationDAO.decorations.splice(index,1);
             });
             for(let i=0;i<50;i++){
-            this.decorationDAO.createDeco_1(600+Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_2(600+Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_3(600+Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_4(600+Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_1(800+Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_2(800+Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_3(800+Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_4(800+Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
 
             this.decorationDAO.createDeco_1(-Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
             this.decorationDAO.createDeco_2(-Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
             this.decorationDAO.createDeco_3(-Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
             this.decorationDAO.createDeco_4(-Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
 
-            this.decorationDAO.createDeco_1(600+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_2(600+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_3(600+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_4(600+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_1(800+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_2(800+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_3(800+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_4(800+Math.random()*Math.random()*20000,-Math.random()*Math.random()*20000);
             
-            this.decorationDAO.createDeco_1(-Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_2(-Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_3(-Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
-            this.decorationDAO.createDeco_4(-Math.random()*Math.random()*20000,600+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_1(-Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_2(-Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_3(-Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
+            this.decorationDAO.createDeco_4(-Math.random()*Math.random()*20000,800+Math.random()*Math.random()*20000);
 
 
             }
@@ -99,6 +99,19 @@ import ProjectliesDAO from "./shellsDAO";
                this.enemiesDAO.createEnemie_2(Math.random()*1000,0,this.player.X,this.player.Y)
                this.enemiesDAO.createEnemie_2(this.player.X*2,Math.random()*1000,this.player.X,this.player.Y);
                this.enemiesDAO.createEnemie_2(Math.random()*1000,this.player.Y*2,this.player.X,this.player.Y)
+            }
+            if(this.wave>2){
+               this.enemiesDAO.create('Enemy_3_img',new Collider(new RoundArea(0,0,10)),
+               0,Math.random()*1000,this.wave,this.wave,'melee',this.wave/2,1, this.wave, this.wave, 0,this.player.X,this.player.Y)
+
+               this.enemiesDAO.create('Enemy_3_img',new Collider(new RoundArea(0,0,10)),
+               Math.random()*1000,0,this.wave,this.wave,'melee',this.wave/2,1, this.wave,this.wave, 0,this.player.X,this.player.Y)
+
+               this.enemiesDAO.create('Enemy_3_img',new Collider(new RoundArea(0,0,10)),
+               this.player.X*2,Math.random()*1000,this.wave,this.wave,'melee',this.wave/2,1, this.wave, this.wave, 0,this.player.X,this.player.Y)
+
+               this.enemiesDAO.create('Enemy_3_img',new Collider(new RoundArea(0,0,10)),
+               Math.random()*1000,this.player.Y*2,this.wave,this.wave,'melee',this.wave/2,1, this.wave, this.wave, 0,this.player.X,this.player.Y)
             }
          }
          
